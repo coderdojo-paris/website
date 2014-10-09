@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   get 'home/index'
 
-
+  get 'set_language/english', as: :set_language_english
+  get 'set_language/french', as: :set_language_french
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
