@@ -8,13 +8,12 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render 'shared/header' %>
 
-<% if I18n.locale == :fr then %>
-  <%= link_to 'EN', set_language_english_path %> / <span class="active">FR</span>
-<% else %>
-  <span class="active">EN</span> / <%= link_to 'FR', set_language_french_path %>
-<% end %>
-        
+<div class="main-content">
+  <%= yield %>
+</div>
+
+
 </body>
 </html>

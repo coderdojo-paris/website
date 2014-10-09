@@ -23,3 +23,8 @@ en:
   home:
     index:
       strapline: "The open source, volunteer led, global movement of free coding clubs for young people"
+
+  time:
+    formats:
+      start_date: "%d %B %H:%M"
+      end_date: "%H:%M"

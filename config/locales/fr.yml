@@ -9,7 +9,7 @@
 fr:
   home:
     index:
-      strapline: "Blah de blah"
+      strapline: "CoderDojo Paris fait partie d'un mouvement mondial regroupant des clubs permettant aux jeunes d’apprendre à coder gratuitement auprès de bénévoles."
 
   date:
     abbr_day_names:
@@ -212,6 +212,8 @@ fr:
   time:
     am: 'am'
     formats:
+      start_date: "%d %B %H:%M"
+      end_date: "%H:%M"
       default: "%-d %B %Y"
       long: "%A %d %B %Y %H h %M"
       short: "%d %b %H h %M"

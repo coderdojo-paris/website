@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= l(@event.start, :format => :start_date).titlecase %> — <%= l(@event.end, :format => :end_date).titlecase %></h2>
+
+<%= render partial: 'venue', object: @event.venue %>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

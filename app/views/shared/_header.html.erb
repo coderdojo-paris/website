@@ -1,0 +1,32 @@
+<header class="centered-navigation">
+  <div class="centered-navigation-wrapper">
+    <%= link_to root_path, class: "mobile-logo" do %>
+      <%= image_tag "coderdojo_logo.svg" %>
+    <% end %>
+    <a href="" class="centered-navigation-menu-button">MENU</a>
+    <ul class="centered-navigation-menu">
+      <li class="nav-link"><%= link_to t('events'), events_path %></li>
+      <li class="nav-link"><%= link_to t('participants'), participants_path %></li>
+      <li class="nav-link"><%= link_to t('mentors'), mentors_path %></li>
+      <li class="nav-link logo">
+        <%= link_to root_path, class: "logo" do %>
+          <%= image_tag "coderdojo_logo.svg" %>
+        <% end %>
+      </li>
+      <li class="nav-link more"><a href="javascript:void(0)">Resources</a>
+        <ul class="submenu">
+          <li><a href="javascript:void(0)">Web Development</a></li>
+          <li><a href="javascript:void(0)">Scratch</a></li>
+        </ul>
+      </li>
+      <li class="nav-link"><%= link_to t('contact'), contact_path %></li>
+      <li class="nav-link">
+        <% if I18n.locale == :fr then %>
+          <%= link_to 'EN', set_language_english_path %><span class="active"> / FR</span>
+        <% else %>
+          <span class="active">EN / </span><%= link_to 'FR', set_language_french_path %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</header>

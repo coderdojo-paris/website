@@ -5,3 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Venue.delete_all
+Event.delete_all
+
+valtech = Venue.create(
+  name: 'Valtech',
+  address: '103 Rue de Grenelle',
+  postcode: '75007',
+  city: 'Paris',
+  country: 'France',
+  latitude: 48.856957,
+  longitude: 2.319383,
+  googlemaps_url: 'https://www.google.fr/maps/place/Valtech/@48.856957,2.319383,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x798b7c4f64f14322',
+  company_url: 'http://www.valtech.fr'
+)
+
+event_18oct = Event.create(
+  start: "2014-10-18 14:00:00.000000",
+  end: "2014-10-18 17:00:00.000000",
+  venue: valtech
+)

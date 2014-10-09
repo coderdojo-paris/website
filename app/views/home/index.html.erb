@@ -1,4 +1,10 @@
-<section class="intro">
-  <%= render "svg/coderdojo_logo" %>
-  <h1><%= t('.strapline') %></h1>
-</section>
+<div class="intro-wrapper">
+  <section class="intro">
+    <div class="main-logo">
+      <%= image_tag "coderdojo_logo.svg", class: "main-logo" %>
+    </div>
+    <div class="strapline">
+      <h1><%= t('.strapline') %></h1>
+    </div>
+  </section>
+</div>

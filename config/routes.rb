@@ -1,10 +1,18 @@
 Rails.application.routes.draw do
+  resources :venues
+  resources :events
+
   root 'home#index'
 
   get 'home/index'
 
   get 'set_language/english', as: :set_language_english
   get 'set_language/french', as: :set_language_french
+
+  get 'participants' => 'home#participants', as: :participants
+  get 'mentors' => 'home#mentors', as: :mentors
+
+  get 'contact' => 'home#contact', as: :contact
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
