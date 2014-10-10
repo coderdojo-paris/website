@@ -34,6 +34,7 @@
         <li>
           <h3><%= l(event.start, :format => :start_date).titlecase %> — <%= l(event.end, :format => :end_date).titlecase %></h3>
           <h5><%= render partial: 'venue', object: event.venue %></h5>
+          <%= link_to 'show details', event_path(event) %>
           <%= link_to 'Edit', edit_event_path(event), class: "action-button" %>
           <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, class: "action-button" %>
         </li>

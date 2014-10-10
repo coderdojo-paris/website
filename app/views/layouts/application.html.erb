@@ -10,9 +10,27 @@
 
 <%= render 'shared/header' %>
 
+
 <div class="main-content">
+  <% flash.each do |name, msg| %>
+    <%= content_tag :div, msg, :id => "flash_#{name}" %>
+  <% end %>
   <%= yield %>
 </div>
+
+<footer class="site-footer">
+  <div class="content">
+    <p class="authentication-link">
+      <% if signed_in? %>
+        <%= link_to t('sign-out'), sign_out_path %>
+      <% else %>
+        <%= link_to t('sign-in'), sign_in_path %>
+      <% end %>
+    </p>
+    <p>© copyright 2014</p>
+  </div>
+
+</footer>
 
 
 </body>
