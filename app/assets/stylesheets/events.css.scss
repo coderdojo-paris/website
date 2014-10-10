@@ -79,3 +79,16 @@ section.previous-events {
   font-weight: 300;
   text-decoration: underline;
 }
+
+section.editing-events {
+  padding-top: 2em;
+  h1 {
+    text-align: center;
+  }
+  .content {
+    @include outer-container();
+    select {
+      display: inline-block;
+    }
+  }
+}

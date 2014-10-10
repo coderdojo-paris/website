@@ -1,3 +1,31 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+section.sign-in {
+  padding-top: 2em;
+  h1 {
+    text-align: center;
+  }
+  .form-content {
+    @include outer-container();
+    .form-input {
+      margin-top: 2em;
+      @include media($large-screen) {
+        @include span-columns(5);
+      }
+    }
+    .submit-button {
+      margin-top: 2em;
+      @include media($large-screen) {
+        @include span-columns(2);
+        @include omega();
+      }
+    }
+  }
+  .message {
+    padding-top: 1em;
+    @include outer-container();
+    text-align: center;
+  }
+}

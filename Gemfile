@@ -27,6 +27,8 @@ gem 'neat', '~> 1.5.1'
 # MAPS
 gem 'leaflet-rails', '~> 0.7.4'
 
+gem 'actionview-encoded_mail_to', '~> 1.0.5'
+
 group :development do
   gem 'spring'
   gem 'guard-livereload', '~> 2.3.0', require: false

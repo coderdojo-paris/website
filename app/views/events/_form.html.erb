@@ -2,7 +2,6 @@
   <% if @event.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
-
       <ul>
       <% @event.errors.full_messages.each do |message| %>
         <li><%= message %></li>
@@ -10,19 +9,22 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
-    <%= f.label :start %><br>
+    <%= f.label :start %>
     <%= f.datetime_select :start %>
   </div>
   <div class="field">
-    <%= f.label :end %><br>
+    <%= f.label :end %>
     <%= f.datetime_select :end %>
   </div>
   <div class="field">
-    <%= f.label :venue_id %><br>
-    <%= f.text_field :venue_id %>
+    <%= f.text_field :signup_link, placeholder: "Link to the Eventbrite or other signup service." %>
   </div>
+  <div class="field">
+    <%= f.label :venue_id %>
+    <%= collection_select(:event, :venue_id, Venue.all, :id, :name, prompt: true) %>
+  </div>
+  <p>If the venue doesn't already exist you have to create one first so <%= link_to "create one", new_venue_path %></p>
   <div class="actions">
     <%= f.submit %>
   </div>
