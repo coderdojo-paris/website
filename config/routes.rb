@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :resources do
+    collection do
+      get 'web_development'
+      get 'scratch'
+    end
+  end
   resources :venues
   resources :events
 

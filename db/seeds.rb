@@ -8,6 +8,8 @@
 
 Venue.delete_all
 Event.delete_all
+ResourceType.delete_all
+Resource.delete_all
 
 valtech = Venue.create(
   name: 'Valtech',
@@ -25,4 +27,19 @@ event_18oct = Event.create(
   start: "2014-10-18 14:00:00.000000",
   end: "2014-10-18 17:00:00.000000",
   venue: valtech
+)
+
+web = ResourceType.create(
+  name: 'Web Development'
+)
+
+scratch = ResourceType.create(
+  name: 'Scratch'
+)
+
+starter_kit = Resource.create(
+  title: 'HTML Starter Kit',
+  description: 'Basic HTML, CSS and JS template files to begin creating a website.',
+  resource_url: 'https://github.com/coderdojo-paris/coderdojo-paris.github.io/raw/master/starterkit.zip',
+  resource_type: web
 )

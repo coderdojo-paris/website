@@ -13,10 +13,10 @@
           <%= image_tag "coderdojo_logo.svg" %>
         <% end %>
       </li>
-      <li class="nav-link more"><a href="javascript:void(0)">Resources</a>
+      <li class="nav-link more"><%= link_to t('resources'), resources_path %>
         <ul class="submenu">
-          <li><a href="javascript:void(0)">Web Development</a></li>
-          <li><a href="javascript:void(0)">Scratch</a></li>
+          <li><%= link_to t('web-development'), web_development_resources_path %></li>
+          <li><%= link_to t('scratch'), scratch_resources_path %></li>
         </ul>
       </li>
       <li class="nav-link"><%= link_to t('contact'), contact_path %></li>
