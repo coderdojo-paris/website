@@ -9,6 +9,7 @@
 fr:
 
   events-link: "Événements"
+  google-link: "Voir sur Google Maps"
 
   home:
     index:
@@ -18,6 +19,9 @@ fr:
     index:
       next-event: "Événements En Cours"
       previous-events: "Événements Antérieurs"
+      signup-copy: "Les places sont limitées donc s'il vous plaît réserver une place dès maintenant si vous souhaitez participer."
+      sign-up-event: "Réserver une place"
+
 
   date:
     abbr_day_names:

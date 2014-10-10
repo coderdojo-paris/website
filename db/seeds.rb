@@ -18,7 +18,7 @@ valtech = Venue.create(
   city: 'Paris',
   country: 'France',
   latitude: 48.856957,
-  longitude: 2.319383,
+  longtitude: 2.319383,
   googlemaps_url: 'https://www.google.fr/maps/place/Valtech/@48.856957,2.319383,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x798b7c4f64f14322',
   company_url: 'http://www.valtech.fr'
 )
@@ -30,7 +30,7 @@ numa = Venue.create(
   city: 'Paris',
   country: 'France',
   latitude: 48.867589,
-  longitude: 2.349631,
+  longtitude: 2.349631,
   googlemaps_url: 'https://www.google.fr/maps/place/NUMA/@48.867589,2.349631,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66e3c310f7817:0x1715b707d5c6af5e',
   company_url: 'https://www.numa.paris/'
 )
@@ -38,6 +38,7 @@ numa = Venue.create(
 event_18oct = Event.create(
   start: "2014-10-18 14:00:00.000000",
   end: "2014-10-18 17:00:00.000000",
+  signup_link: "https://www.eventbrite.fr/e/billets-coderdojo-paris-supported-by-valtech-13492930719",
   venue: valtech
 )
 

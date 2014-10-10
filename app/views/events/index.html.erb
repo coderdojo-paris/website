@@ -10,7 +10,18 @@
     <div class="next-event-details">
       <h2><%= l(@next_event.start, :format => :start_date).titlecase %> — <%= l(@next_event.end, :format => :end_date).titlecase %></h2>
       <h5><%= render partial: 'venue', object: @next_event.venue %></h5>
+      <p><%= t '.signup-copy' %></p>
+      <%= link_to t('.sign-up-event'), @next_event.signup_link, class: "signup-action-button" %>
     </div>
+    <%= map(:center => {
+          :latlng => [@next_event.venue.latitude, @next_event.venue.longtitude],
+          :zoom => 15
+        },
+        :markers => [
+          {
+            :latlng => [@next_event.venue.latitude, @next_event.venue.longtitude],
+          }
+        ]) %>
   </div>
 </section>
 

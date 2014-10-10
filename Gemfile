@@ -24,6 +24,9 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'bourbon', '~> 3.2.1'
 gem 'neat', '~> 1.5.1'
 
+# MAPS
+gem 'leaflet-rails', '~> 0.7.4'
+
 group :development do
   gem 'spring'
   gem 'guard-livereload', '~> 2.3.0', require: false

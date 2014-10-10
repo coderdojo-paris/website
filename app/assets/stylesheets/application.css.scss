@@ -1,3 +1,5 @@
+//= depend_on_asset "layers.png"
+//= depend_on_asset "layers-2x.png"
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -11,13 +13,14 @@
  * file per style scope.
  *
  *= require_self
+ *= require leaflet
  */
 
 $light-blue: #00AFF1;
 $dark-blue: #00324B;
 $red: #F7391A;
 
-@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro|Montserrat:400,700|Open+Sans:400,700,300);
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Montserrat:400,700|Open+Sans:400,700,300);
 
 @import "bourbon";
 @import "base/grid-settings";
@@ -42,9 +45,10 @@ body {
   margin-right: 1em;
   display: inline-block;
   font-family: 'Anonymous Pro', sans-serif;
+  font-weight: bold;
   padding: 0.5em 1em;
   border-radius: 0.5em;
-  border: 1px solid $light-blue;
+  border: 2px solid $light-blue;
 
   &:hover {
     background: $light-blue;
@@ -55,14 +59,36 @@ body {
 .create-action-button {
   display: inline-block;
   font-family: 'Anonymous Pro', sans-serif;
+  font-weight: bold;
   color: white;
   font-size: 1.5em;
   padding: 0.5em 1em;
   border-radius: 0.5em;
-  border: 1px solid white;
+  border: 2px solid white;
 
   &:hover {
     background: white;
     color: $red;
   }
+}
+
+.signup-action-button {
+  margin-top: 1em;
+  display: inline-block;
+  font-family: 'Anonymous Pro', sans-serif;
+  font-weight: bold;
+  color: $dark-blue;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border: 2px solid $dark-blue;
+
+  &:hover {
+    background: $dark-blue;
+    color: $light-blue;
+  }
+}
+
+#map {
+  height: 400px;
 }

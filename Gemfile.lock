@@ -84,6 +84,7 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.1)
     kgio (2.9.2)
+    leaflet-rails (0.7.4)
     listen (2.7.9)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -170,6 +171,7 @@ DEPENDENCIES
   foreman (~> 0.75.0)
   guard-livereload (~> 2.3.0)
   jquery-rails
+  leaflet-rails (~> 0.7.4)
   neat (~> 1.5.1)
   pg
   rails (= 4.1.6)

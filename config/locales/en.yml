@@ -21,6 +21,7 @@
 
 en:
   events-link: "Events"
+  google-link: "View in Google Maps"
 
   home:
     index:
@@ -30,6 +31,8 @@ en:
     index:
       next-event: "Next Event"
       previous-events: "Previous Events"
+      signup-copy: "Places are limited so please reserve a place now if you'd like to attend."
+      sign-up-event: "Reserve a place"
 
   time:
     formats:
