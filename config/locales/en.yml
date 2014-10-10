@@ -20,11 +20,18 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  events-link: "Events"
+
   home:
     index:
       strapline: "The open source, volunteer led, global movement of free coding clubs for young people"
 
+  events:
+    index:
+      next-event: "Next Event"
+      previous-events: "Previous Events"
+
   time:
     formats:
-      start_date: "%d %B %H:%M"
+      start_date: "%A, %d %B %H:%M"
       end_date: "%H:%M"

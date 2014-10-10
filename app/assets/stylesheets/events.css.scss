@@ -1,3 +1,56 @@
 // Place all the styles related to the events controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+section.create-event {
+  background: $red;
+
+  .content {
+    padding: 2em 0;
+    @include outer-container;
+    text-align: center;
+  }
+}
+
+section.next-event {
+  background: $light-blue;
+
+  .content {
+    padding: 2em 0;
+    @include outer-container;
+    h1 {
+      text-align:center;
+      color: white;
+    }
+    .next-event-details {
+      margin: 3em 0;
+    }
+  }
+}
+
+section.previous-events {
+  background: white;
+
+  .content {
+    padding: 2em 0;
+    @include outer-container;
+    h1 {
+      color: $dark-blue;
+      text-align:center;
+    }
+  }
+}
+
+.previous-events-list {
+  padding: 2em 0;
+  li {
+    padding: 1em 0;
+    border-bottom: 1px solid transparentize($dark-blue, 0.8);
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+
+}

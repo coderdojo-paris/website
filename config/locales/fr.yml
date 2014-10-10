@@ -7,9 +7,17 @@
 # Emended by Benjamin des Gachons and Patrick Chew : <http://www.fitima.org/docs/fiche.pdf>
 
 fr:
+
+  events-link: "Événements"
+
   home:
     index:
       strapline: "CoderDojo Paris fait partie d'un mouvement mondial regroupant des clubs permettant aux jeunes d’apprendre à coder gratuitement auprès de bénévoles."
+
+  events:
+    index:
+      next-event: "Événements En Cours"
+      previous-events: "Événements Antérieurs"
 
   date:
     abbr_day_names:
@@ -212,7 +220,7 @@ fr:
   time:
     am: 'am'
     formats:
-      start_date: "%d %B %H:%M"
+      start_date: "%A, %d %B %H:%M"
       end_date: "%H:%M"
       default: "%-d %B %Y"
       long: "%A %d %B %Y %H h %M"

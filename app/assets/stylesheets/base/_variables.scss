@@ -25,11 +25,11 @@ $base-background-color: white;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $light-blue;
 
 // Link Colors
 $base-link-color: $base-accent-color;
-$hover-link-color: darken($base-accent-color, 15);
+$hover-link-color: $light-blue;
 $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 
