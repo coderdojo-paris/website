@@ -10,6 +10,7 @@ Venue.delete_all
 Event.delete_all
 ResourceType.delete_all
 Resource.delete_all
+FaqType.delete_all
 
 valtech = Venue.create(
   name: 'Valtech',
@@ -91,4 +92,24 @@ starter_kit = Resource.create(
   description: 'Basic HTML, CSS and JS template files to begin creating a website.',
   resource_url: 'https://github.com/coderdojo-paris/coderdojo-paris.github.io/raw/master/starterkit.zip',
   resource_type: web
+)
+
+student = FaqType.create(
+  name: 'Student'
+)
+
+parent = FaqType.create(
+  name: 'Parent'
+)
+
+mentor = FaqType.create(
+  name: 'Mentor'
+)
+
+faq1 = Faq.create(
+  title_en: 'Example Title in English',
+  title_fr: 'Example Title in French',
+  content_en: 'Body text in English',
+  content_fr: 'Body text in French',
+  faq_type: mentor
 )

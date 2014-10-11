@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :faqs
+
   resources :resources do
     collection do
       get 'web_development'
@@ -16,8 +18,8 @@ Rails.application.routes.draw do
   get 'set_language/english', as: :set_language_english
   get 'set_language/french', as: :set_language_french
 
-  get 'participants' => 'home#participants', as: :participants
-  get 'mentors' => 'home#mentors', as: :mentors
+  get 'participants' => 'faqs#participants', as: :participants
+  get 'mentors' => 'faqs#mentors', as: :mentors
 
   get 'contact' => 'home#contact', as: :contact
 
