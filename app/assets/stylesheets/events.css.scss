@@ -13,6 +13,15 @@ section.create-event {
   }
 }
 
+section.show-event-intro {
+  @include standard-padding;
+  text-align: center;
+
+  .google-link {
+    display: none;
+  }
+}
+
 section.editing-events {
   padding-top: 2em;
   h1 {
@@ -25,3 +34,4 @@ section.editing-events {
     }
   }
 }
+
