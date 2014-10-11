@@ -17,11 +17,14 @@ fr:
 
   events:
     index:
-      next-event: "Événements En Cours"
       previous-events: "Événements Antérieurs"
+
+
+  shared:
+    next_event:
+      next-event: "Événements En Cours"
       signup-copy: "Les places sont limitées donc s'il vous plaît réserver une place dès maintenant si vous souhaitez participer."
       sign-up-event: "Réserver une place"
-
 
   date:
     abbr_day_names:

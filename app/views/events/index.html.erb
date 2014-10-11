@@ -1,47 +1,16 @@
+<% unless current_user.nil?  %>
 <section class="create-event">
   <div class="content">
-    <%= link_to t('.create-event'), new_event_path, class: "create-action-button" %>
+    <%= link_to "Create a new event", new_event_path, class: "create-action-button" %>
   </div>
 </section>
+<% end %>
 
-<section class="next-event">
-  <div class="content">
-    <h1><%= t '.next-event' %></h1>
-    <div class="next-event-details">
-      <h2><%= l(@next_event.start, :format => :start_date).titlecase %> — <%= l(@next_event.end, :format => :end_date).titlecase %></h2>
-      <h5><%= render partial: 'venue', object: @next_event.venue %></h5>
-      <p><%= t '.signup-copy' %></p>
-      <%= link_to t('.sign-up-event'), @next_event.signup_link, class: "signup-action-button" %>
-    </div>
-    <%= map(:center => {
-          :latlng => [@next_event.venue.latitude, @next_event.venue.longtitude],
-          :zoom => 15
-        },
-        :markers => [
-          {
-            :latlng => [@next_event.venue.latitude, @next_event.venue.longtitude],
-          }
-        ]) %>
-  </div>
-</section>
+<%= render partial: 'shared/next_event', object: @next_event %>
 
 <section class="previous-events">
-  <div class="content">
-    <h1><%= t '.previous-events' %></h1>
-
-    <ul class="previous-events-list">
-      <% @events.each do |event| %>
-        <li>
-          <h3><%= l(event.start, :format => :start_date).titlecase %> — <%= l(event.end, :format => :end_date).titlecase %></h3>
-          <h5><%= render partial: 'venue', object: event.venue %></h5>
-          <%= link_to 'show details', event_path(event) %>
-          <% unless current_user.nil? %>
-            <%= link_to 'Edit', edit_event_path(event), class: "action-button" %>
-            <%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, class: "action-button" %>
-          <% end %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+  <h1><%= t '.previous-events' %></h1>
+  <ul class="previous-events-list">
+    <%= render partial: 'shared/previous_events', collection: @previous_events %>
+  </ul>
 </section>
-

@@ -1,0 +1,30 @@
+<section class="next-event">
+    <h1><%= t '.next-event' %></h1>
+    <div class="next-event-wrapper">
+      <div class="next-event-details">
+        <h2 class="event-date"><%= l(next_event.start, :format => :start_date).titlecase %> — <%= l(next_event.end, :format => :end_date).titlecase %></h2>
+        <h5 class="event-venue"><%= render partial: 'shared/venue', object: next_event.venue %></h5>
+        <p><%= t '.signup-copy' %></p>
+        <%= link_to t('.sign-up-event'), next_event.signup_link, class: "signup-action-button" %>
+        <% unless current_user.nil? %>
+          <ul class="next-event-action-buttons-list">
+            <li><%= link_to 'Edit', edit_event_path(next_event) %></li>
+            <li><%= link_to 'Destroy', next_event, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+          </ul>
+        <% end %>
+      </div>
+      <%= map(
+          :container_id => "next-event-map",
+          :center => {
+            :latlng => [next_event.venue.latitude, next_event.venue.longtitude],
+            :zoom => 15
+          },
+          :markers => [
+            {
+              :latlng => [next_event.venue.latitude, next_event.venue.longtitude],
+              :popup => (render partial: 'shared/popup_venue', object: next_event.venue)
+            }
+          ]
+      ) %>
+    </div>
+</section>

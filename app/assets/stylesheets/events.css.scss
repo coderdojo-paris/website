@@ -3,82 +3,126 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 section.create-event {
+  @include standard-padding;
   background: $red;
+  text-align: center;
 
-  .content {
-    padding: 2em 0;
-    @include outer-container;
-    text-align: center;
+  .create-action-button {
+
+    @include large-button(white, $red);
   }
 }
 
 section.next-event {
+  @include standard-padding;
+  @include events;
   background: $light-blue;
 
-  .content {
-    padding: 2em 0;
-    @include outer-container;
-    h1 {
-      text-align:center;
-      color: white;
+  h1 {
+    text-align:center;
+    color: white;
+  }
+
+  .event-date {
+    margin-bottom: 0.5em;
+  }
+
+  .event-venue {
+    margin-bottom: 0.7em;
+  }
+
+  p {
+    font-family: 'Anonymous Pro', sans-serif;
+  }
+
+  .google-link {
+    color: white;
+  }
+
+  .next-event-wrapper {
+    margin-top: 2em;
+    @include outer-container();
+  }
+
+  .next-event-details {
+    text-align: center;
+    @include media($large-screen) {
+      @include span-columns(8);
+      text-align: left;
     }
-    .next-event-details {
-      margin: 3em 1em;
-      text-align: center;
-      @include media($large-screen) {
-        margin: 3em 0;
-        @include span-columns(8);
-        text-align: left;
-      }
-      p {
-        font-family: 'Anonymous Pro', sans-serif;
-        margin-top: 1.5em;
-        font-size: 1.2em;
-      }
-      .google-link {
-        color: white;
-      }
+  }
+
+  .signup-action-button {
+    margin-top: 1em;
+    @include media($mobile) {
+      margin-bottom: 2em;
     }
-    #map {
-      margin: 3em 0;
-      height: 20em;
-      @include media($large-screen) {
-        @include span-columns(4);
-        @include omega();
-      }
-    }
+    @include large-button($dark-blue, $light-blue);
+  }
+
+  .next-event-action-buttons-list {
+    @include action-buttons-list($dark-blue, $light-blue);
+  }
+
+  #next-event-map {
+    height: 20em;
+    border: 2px solid white;
   }
 }
 
 section.previous-events {
+  @include standard-padding;
+  @include events;
   background: white;
-  .content {
-    padding: 2em 0;
+  h1 {
+    color: $dark-blue;
+    text-align:center;
+  }
+
+  .event-date {
+    margin-bottom: 0.2em;
+  }
+
+  .previous-events-list {
     @include outer-container;
-    h1 {
-      color: $dark-blue;
-      text-align:center;
+    padding: 2em 0;
+    li.previous-event {
+      @include row();
+      padding: 2em 0;
+      border-bottom: 1px solid transparentize($dark-blue, 0.8);
+      text-align: center;
+      &:last-child {
+        border: none;
+      }
     }
+  }
+
+  .previous-events-action-buttons-list {
+    @include action-buttons-list($light-blue, white);
+  }
+
+  .event-details {
+    text-align: center;
+    @include media($large-screen) {
+      text-align: left;
+      @include span-columns(8);
+    }
+  }
+
+  .show-details-button {
+    text-align: center;
+    margin-top: 1em;
+    @include media($large-screen) {
+      margin-top: 0;
+      @include span-columns(4);
+    }
+    @include large-button($light-blue, white);
   }
 }
 
-.previous-events-list {
-  padding: 2em 0;
-  li {
-    padding: 1em 0;
-    border-bottom: 1px solid transparentize($dark-blue, 0.8);
 
-    &:last-child {
-      border: none;
-    }
-  }
-}
 
-.google-link {
-  padding-left: 1em;
-  font-weight: 300;
-  text-decoration: underline;
-}
+
 
 section.editing-events {
   padding-top: 2em;

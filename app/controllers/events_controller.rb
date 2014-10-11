@@ -5,7 +5,7 @@ class EventsController < ApplicationController
   # GET /events
   def index
     @next_event = Event.next.first
-    @events = Event.previous
+    @previous_events = Event.previous
   end
 
   # GET /events/1
