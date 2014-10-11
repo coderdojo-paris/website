@@ -11,12 +11,16 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
 //= require leaflet
 //= require_tree .
 
 $(document).ready(function() {
+  $("#modal-window").hide();
+  $("#modal-window-bg").hide();
+
   var menu = $('.centered-navigation-menu');
   var menuToggle = $('.centered-navigation-menu-button');
   var signUp = $('.sign-up');
@@ -28,5 +32,17 @@ $(document).ready(function() {
         menu.removeAttr('style');
       }
     });
+  });
+
+  $(document).delegate('.sign-in-link', 'ajax:success', function(event, data, status, xhr) {
+    $("#modal-window-bg").fadeIn();
+    $("#modal-window").fadeIn();
+    $("#modal-window").html(data);
+    $("#login").focus();
+  });
+
+  $(document).delegate('.sign-in-close', 'click', function() {
+    $("#modal-window-bg").fadeOut();
+    $("#modal-window").fadeOut();
   });
 });

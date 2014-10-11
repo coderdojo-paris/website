@@ -15,6 +15,7 @@ gem 'unicorn', '~> 4.8.3'
 
 # JS
 gem 'jquery-rails'
+gem 'jquery-turbolinks', '~> 0.2.1'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 

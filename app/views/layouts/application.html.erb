@@ -10,6 +10,10 @@
 
 <%= render 'shared/header' %>
 
+<div id="modal-window">
+  <p>Something here</p>
+</div>
+<div id="modal-window-bg"></div>
 
 <div class="main-content">
   <% flash.each do |name, msg| %>
@@ -24,7 +28,7 @@
       <% if signed_in? %>
         <%= link_to t('sign-out'), sign_out_path %>
       <% else %>
-        <%= link_to t('sign-in'), sign_in_path %>
+        <%= link_to t('sign-in'), sign_in_path, class: "sign-in-link", remote: true %>
       <% end %>
     </p>
     <p>© copyright 2014</p>

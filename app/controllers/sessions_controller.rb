@@ -1,5 +1,9 @@
 class SessionsController < ApplicationController  
   def new
+    respond_to do |format|
+      format.html
+      format.js { render layout: false, :content_type => 'text/html' }
+    end
   end
 
   def create
