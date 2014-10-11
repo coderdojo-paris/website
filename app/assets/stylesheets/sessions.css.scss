@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 section.sign-in {
-  padding-top: 2em;
+  background: white;
+  @include standard-padding;
   h1 {
     text-align: center;
   }

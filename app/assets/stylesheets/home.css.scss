@@ -33,3 +33,29 @@
 .intro-wrapper {
   background: $light-blue;
 }
+
+.mentor-signup {
+  border-top: 1px solid $dark-blue;
+  border-bottom: 1px solid $dark-blue;
+  background: white;
+  @include standard-padding;
+  text-align: center;
+  p {
+    color: $red;
+    margin-bottom: 0;
+    font-size: 1.5em;
+  }
+  a {
+    margin-left: 1em;
+    @include media($mobile) {
+      margin-top: 1em;
+      display: block;
+      margin-left: 0;
+    }
+    
+    color: white;
+    background: $red;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+  }
+}

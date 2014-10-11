@@ -9,4 +9,8 @@
   </section>
 </div>
 
+<section class="mentor-signup">
+  <p><%= t '.mentor-signup-message' %><%= link_to t('.mentor-signup-link'), mentors_path %></p>
+</section>
+
 <%= render partial: 'shared/next_event', object: @next_event %>

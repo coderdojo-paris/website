@@ -1,0 +1,49 @@
+section.previous-events {
+  @include standard-padding;
+  @include events;
+  background: white;
+  h1 {
+    color: $dark-blue;
+    text-align:center;
+  }
+
+  .event-date {
+    margin-bottom: 0.2em;
+  }
+
+  .previous-events-list {
+    @include outer-container;
+    padding: 2em 0;
+    li.previous-event {
+      @include row();
+      padding: 2em 0;
+      border-bottom: 1px solid transparentize($dark-blue, 0.8);
+      text-align: center;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .previous-events-action-buttons-list {
+    @include action-buttons-list($light-blue, white);
+  }
+
+  .event-details {
+    text-align: center;
+    @include media($large-screen) {
+      text-align: left;
+      @include span-columns(8);
+    }
+  }
+
+  .show-details-button {
+    text-align: center;
+    margin-top: 1em;
+    @include media($large-screen) {
+      margin-top: 0;
+      @include span-columns(4);
+    }
+    @include large-button($light-blue, white);
+  }
+}

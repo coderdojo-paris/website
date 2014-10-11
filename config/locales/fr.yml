@@ -11,20 +11,22 @@ fr:
   events-link: "Événements"
   google-link: "Voir sur Google Maps"
 
+  events:
+    index:
+      previous-events-title: "Événements Antérieurs"
+
   home:
     index:
       strapline: "CoderDojo Paris fait partie d'un mouvement mondial regroupant des clubs permettant aux jeunes d’apprendre à coder gratuitement auprès de bénévoles."
-
-  events:
-    index:
-      previous-events: "Événements Antérieurs"
-
 
   shared:
     next_event:
       next-event: "Événements En Cours"
       signup-copy: "Les places sont limitées donc s'il vous plaît réserver une place dès maintenant si vous souhaitez participer."
       sign-up-event: "Réserver une place"
+
+    previous_events:
+      view-event-link: "Voir l'événement"
 
   date:
     abbr_day_names:
