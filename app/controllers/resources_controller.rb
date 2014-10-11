@@ -7,13 +7,13 @@ class ResourcesController < ApplicationController
   end
 
   def web_development
-    resource_type = ResourceType.find_by name: 'Web Development'
-    @resources = Resource.where(resource_type_id: resource_type.id)
+    web = ResourceType.find_by name: 'Web Development'
+    @resources = Resource.where(resource_type: web)
   end
 
   def scratch
-    resource_type = ResourceType.find_by name: 'Scratch'
-    @resources = Resource.where(resource_type_id: resource_type.id)
+    scratch = ResourceType.find_by name: 'Scratch'
+    @resources = Resource.where(resource_type: scratch)
   end
 
   # GET /resources/1

@@ -1,4 +1,4 @@
 <section class="show-event-intro">
   <h1><%= l(@event.start, :format => :start_date).titlecase %> — <%= l(@event.end, :format => :end_date).titlecase %></h1>
-  <h3><%= render partial: 'venue', object: @event.venue %></h3>
+  <h3><%= render partial: 'shared/venue', object: @event.venue %></h3>
 </section>

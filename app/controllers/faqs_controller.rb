@@ -2,11 +2,14 @@ class FaqsController < ApplicationController
   before_action :set_faq, only: [:show, :edit, :update, :destroy]
 
   def mentors
-    @faqs = Faq.all
+    faq_type = FaqType.find_by name: 'Mentor'
+    @faqs = Faq.where(faq_type_id: faq_type.id)
   end
 
   def participants
-    @faqs = Faq.all
+    student = FaqType.find_by name: 'Student'
+    parent = FaqType.find_by name: 'Parent'
+    @faqs = Faq.where(faq_type: [student, parent])
   end
 
   # GET /faqs

@@ -130,3 +130,11 @@ faq3 = Faq.create(
   content_fr: 'Body text in French 3',
   faq_type: student
 )
+
+faq3 = Faq.create(
+  title_en: 'Example Title in English 4',
+  title_fr: 'Example Title in French 4',
+  content_en: 'Body text in English 4',
+  content_fr: 'Body text in French 4',
+  faq_type: parent
+)

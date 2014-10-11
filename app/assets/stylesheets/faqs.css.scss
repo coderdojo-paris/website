@@ -11,7 +11,7 @@ section.create-faq {
   }
 }
 
-section.mentors-intro {
+section.mentors-intro, section.participants-intro {
   @include standard-padding;
   background: $light-blue;
   h1 {
