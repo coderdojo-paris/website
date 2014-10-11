@@ -1,10 +1,18 @@
 <li class="faq">
   <h3><%= faqs.title %></h3>
-  <p><%= faqs.content %></p>
+  <p><%= faqs.content.html_safe %></p>
   <% unless current_user.nil? %>
     <ul class="faqs-action-buttons-list">
       <li><%= link_to 'Edit', edit_faq_path(faqs) %></li>
       <li><%= link_to 'Destroy', faqs, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      <% unless faqs.first? %>
+        <li><%= link_to '↑', move_higher_faq_path(faqs) %></li>
+        <li><%= link_to '↑↑', move_to_top_faq_path(faqs) %></li>
+      <% end %>
+      <% unless faqs.last? %>
+        <li><%= link_to '↓', move_lower_faq_path(faqs) %></li>
+        <li><%= link_to '↓↓', move_to_bottom_faq_path(faqs) %></li>
+      <% end %>
     </ul>
   <% end %>
 </li>

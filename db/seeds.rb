@@ -107,28 +107,49 @@ mentor = FaqType.create(
   name: 'Mentor'
 )
 
-faq1 = Faq.create(
-  title_en: 'Example Title in English',
+mentor_kids = Faq.create(
+  position: 10,
+  title_en: 'How many children will there be and what ages?',
   title_fr: 'Example Title in French',
-  content_en: 'Body text in English',
+  content_en: 'In general there are around 30 children, with around half of them in the 8 and 10 age round with some older and some younger',
   content_fr: 'Body text in French',
   faq_type: mentor
 )
 
-faq2 = Faq.create(
-  title_en: 'Example Title in English 2',
+mentor_timing = Faq.create(
+  position: 20,
+  title_en: 'How long does the dojo last?',
   title_fr: 'Example Title in French 2',
-  content_en: 'Body text in English 2',
+  content_en: 'The actual dojo lasts from 2pm — 5pm, but the ideal is to arrive a little beforehand so that we can organise (around 1pm) and then a little time after to help pack up. Any time you cna give is appreciated though and these are not hard rules.',
   content_fr: 'Body text in French 2',
-  faq_type: student
+  faq_type: mentor
 )
 
-faq3 = Faq.create(
-  title_en: 'Example Title in English 3',
+mentor_skills = Faq.create(
+  position: 30,
+  title_en: 'What will I be doing?',
   title_fr: 'Example Title in French 3',
-  content_en: 'Body text in English 3',
+  content_en: 'There are two main themes, Scratch for the younger children and HTL / CSS & some Javascript for the older children. Help with either is great — alternatively you may have something in particular you would like to teach which is also appreciated.',
   content_fr: 'Body text in French 3',
-  faq_type: student
+  faq_type: mentor
+)
+
+mentor_attitude = Faq.create(
+  position: 40,
+  title_en: 'Do I need to be a programming genius to help?',
+  title_fr: 'Example Title in French 3',
+  content_en: 'In a word no — the main thing is to have fun and be enthusiastic. You can also ask the advice of other mentors if something is beyond your level of expertise.',
+  content_fr: 'Body text in French 3',
+  faq_type: mentor
+)
+
+mentor_contact = Faq.create(
+  position: 50,
+  title_en: 'I still have some questions, who do I ask?',
+  title_fr: 'Example Title in French 3',
+  content_en: 'If you still are unsure about how the dojo works or what you can do to help, feel free to <a href="/contact">get in touch</a>',
+  content_fr: 'Body text in French 3',
+  faq_type: mentor
 )
 
 faq3 = Faq.create(

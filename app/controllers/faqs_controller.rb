@@ -1,5 +1,5 @@
 class FaqsController < ApplicationController
-  before_action :set_faq, only: [:show, :edit, :update, :destroy]
+  before_action :set_faq, only: [:show, :edit, :update, :destroy, :move_to_bottom, :move_lower, :move_to_top, :move_higher]
 
   def mentors
     faq_type = FaqType.find_by name: 'Mentor'
@@ -10,6 +10,26 @@ class FaqsController < ApplicationController
     student = FaqType.find_by name: 'Student'
     parent = FaqType.find_by name: 'Parent'
     @faqs = Faq.where(faq_type: [student, parent])
+  end
+
+  def move_to_top
+    @faq.move_to_top
+    redirect_to :back
+  end
+
+  def move_higher
+    @faq.move_higher
+    redirect_to :back
+  end
+
+  def move_to_bottom
+    @faq.move_to_bottom
+    redirect_to :back
+  end
+
+  def move_lower
+    @faq.move_lower
+    redirect_to :back
   end
 
   # GET /faqs

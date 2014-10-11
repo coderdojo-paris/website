@@ -32,6 +32,7 @@ gem 'leaflet-rails', '~> 0.7.4'
 gem 'traco', '~> 3.1.5'
 
 gem 'actionview-encoded_mail_to', '~> 1.0.5'
+gem 'acts_as_list', '~> 0.4.0'
 
 group :development do
   gem 'spring'

@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     password = params[:password]
     if (login == ENV['LOGIN_NAME'] && password == ENV['PASSWORD'])
       session[:user] = login
-      redirect_to root_url, :notice => "Signed in"
+      redirect_to :back, :notice => "Signed in"
     else
       flash.now[:error] = "Couldn't sign in with those details."
       render "new"
@@ -19,7 +19,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-      session[:user] = nil
-      redirect_to root_url, notice: "Signed out"
+    session[:user] = nil
+    redirect_to :back, notice: "Signed out"
+    rescue ActionController::RedirectBackError
+      redirect_to :root, notice: "Signed out"
   end
 end
