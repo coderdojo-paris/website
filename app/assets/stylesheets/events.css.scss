@@ -6,9 +6,7 @@ section.create-event {
   @include standard-padding;
   background: $red;
   text-align: center;
-
   .create-action-button {
-
     @include large-button(white, $red);
   }
 }

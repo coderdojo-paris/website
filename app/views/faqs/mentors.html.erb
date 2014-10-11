@@ -1,14 +1,30 @@
-<h1>Mentors</h1>
-
-<% @faqs.each do |faq| %>
-  <tr>
-    <td><%= faq.title_en %></td>
-    <td><%= faq.title_fr %></td>
-    <td><%= faq.content_en %></td>
-    <td><%= faq.content_fr %></td>
-    <td><%= faq.faq_type %></td>
-    <td><%= link_to 'Show', faq %></td>
-    <td><%= link_to 'Edit', edit_faq_path(faq) %></td>
-    <td><%= link_to 'Destroy', faq, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<% unless current_user.nil?  %>
+<section class="create-faq">
+  <%= link_to "Create a new FAQ", new_faq_path, class: "create-action-button" %>
+</section>
 <% end %>
+
+
+<section class="mentors-intro">
+  <h1>Mentors</h1>
+  <div class="intro-copy">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation</p><p>Ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+</section>
+
+<section class="faqs">
+  <h1>FAQs</h1>
+  <ul class="faqs-list">
+    <%= render partial: 'shared/faqs', collection: @faqs %>
+  </ul>
+</section>
+
+
+

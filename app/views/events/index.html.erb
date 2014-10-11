@@ -1,8 +1,6 @@
 <% unless current_user.nil?  %>
 <section class="create-event">
-  <div class="content">
-    <%= link_to "Create a new event", new_event_path, class: "create-action-button" %>
-  </div>
+  <%= link_to "Create a new event", new_event_path, class: "create-action-button" %>
 </section>
 <% end %>
 

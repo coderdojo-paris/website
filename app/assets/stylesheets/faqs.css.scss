@@ -1,3 +1,66 @@
 // Place all the styles related to the faqs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+section.create-faq {
+  @include standard-padding;
+  background: $red;
+  text-align: center;
+  .create-action-button {
+    @include large-button(white, $red);
+  }
+}
+
+section.mentors-intro {
+  @include standard-padding;
+  background: $light-blue;
+  h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .intro-copy {
+    padding-top: 2em;
+    @include outer-container();
+    @include media($large-screen) {
+      @include prefixer(column-count, 2, webkit moz spec);
+    }
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2em;
+      margin: 0;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+section.faqs {
+  @include standard-padding;
+  h1 {
+    text-align: center;
+  }
+  .faqs-list {
+    @include outer-container;
+    li.faq {
+      @include row();
+      padding: 2em 0;
+      border-bottom: 1px solid transparentize($dark-blue, 0.8);
+      &:last-child {
+        border: none;
+      }
+
+      h3 {
+        text-align: center;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        font-family: 'Anonymous Pro', sans-serif;
+        font-size: 1.2em;
+      }
+    }
+  }
+  .faqs-action-buttons-list {
+    @include action-buttons-list($light-blue, white);
+  }
+}

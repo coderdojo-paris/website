@@ -11,6 +11,7 @@ Event.delete_all
 ResourceType.delete_all
 Resource.delete_all
 FaqType.delete_all
+Faq.delete_all
 
 valtech = Venue.create(
   name: 'Valtech',
@@ -112,4 +113,20 @@ faq1 = Faq.create(
   content_en: 'Body text in English',
   content_fr: 'Body text in French',
   faq_type: mentor
+)
+
+faq2 = Faq.create(
+  title_en: 'Example Title in English 2',
+  title_fr: 'Example Title in French 2',
+  content_en: 'Body text in English 2',
+  content_fr: 'Body text in French 2',
+  faq_type: student
+)
+
+faq3 = Faq.create(
+  title_en: 'Example Title in English 3',
+  title_fr: 'Example Title in French 3',
+  content_en: 'Body text in English 3',
+  content_fr: 'Body text in French 3',
+  faq_type: student
 )
