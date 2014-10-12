@@ -7,26 +7,47 @@
 # Emended by Benjamin des Gachons and Patrick Chew : <http://www.fitima.org/docs/fiche.pdf>
 
 fr:
+  events-link: "Events"
+  google-link: "View in Google Maps"
+  resources-link: "Resources"
+  participants-link: "Participants"
+  mentors-link: "Mentors"
+  contact-link: "Contact"
 
-  events-link: "Événements"
-  google-link: "Voir sur Google Maps"
+  faqs:
+    mentors:
+      mentor-introduction: "<p>We are always looking for technically skilled mentors to help out, for a couple of hours a month, helping share their knowledge with local young people.</p><p>Volunteering at a Dojo can be a rewarding experience, and might not require as much as you think. It gives you an opportunity to help kids learn how to code, and an opportunity to learn new skills and technologies.</p><p>We are also always looking for volunteers to help with a wide array of other not so technical tasks, from registration and administration through to keeping this website up to date.</p>"
 
-  events:
-    index:
-      previous-events-title: "Événements Antérieurs"
+    participants:
+      participants-introduction: "<p>CoderDojo is a fun and social space where young people, between 7 and 17, can go to explore technology together and get advice and support from skilled mentors.</p><p>In Dojos young people get the opportunity to make apps, websites, games, play with robotics and more!</p><p>We do require parents to join their child for the duration of the Dojo session.</p><p>This enables the volunteer mentors to concentrate on assisting the young people with their development, while parents ensure their children are behaved, or help out with the running of the Dojo.</p>"
 
   home:
     index:
-      strapline: "CoderDojo Paris fait partie d'un mouvement mondial regroupant des clubs permettant aux jeunes d’apprendre à coder gratuitement auprès de bénévoles."
+      strapline: "The open source, volunteer led, global movement of free coding clubs for young people"
+      mentor-signup-message: "We are always looking for people interested in mentoring"
+      mentor-signup-link: "Find out more"
+
+    contact:
+      contact-heading: "Get in touch"
+      twitter-link: "Follow us on twitter"
+      email-link: "Send us an email"
+
+  events:
+    index:
+      previous-events-title: "Previous Events"
+
+  resources:
+    index:
+      resource-introduction: "<p>We have two main groups at the Dojo that gives us a lot of flexibility between levels of experience and age.</p><p>Scratch is a software tool for younger or less experience programmers and is a great way to introduce children to programming concepts.</p><p>For the older or more experienced we introduce web development including (depending on skill levelq) HTML, CSS and javascript.</p><p>You can find here some useful resources for both of these to help you prepare for, or continue between Dojos.</p>"
 
   shared:
     next_event:
-      next-event: "Événements En Cours"
-      signup-copy: "Les places sont limitées donc s'il vous plaît réserver une place dès maintenant si vous souhaitez participer."
-      sign-up-event: "Réserver une place"
+      next-event: "Next Event"
+      signup-copy: "Places are limited so please reserve a place now if you'd like to attend."
+      sign-up-event: "Reserve a place"
 
     previous_events:
-      view-event-link: "Voir l'événement"
+      view-event-link: "View event"
 
   date:
     abbr_day_names:

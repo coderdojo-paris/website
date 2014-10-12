@@ -2,6 +2,48 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+section.contact {
+  @include standard-padding;
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  .contact-list {
+    @include standard-list;
+
+    .icon {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 100px;
+      vertical-align: top;
+      font-size: 2em;
+      font-weight: bold;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 100px;
+        width: 120px;
+      }
+    }
+
+    .icon.email:before {
+      background: image-url("email_icon.svg") 0 0 no-repeat;
+    }
+    .icon.twitter:before {
+      background: image-url("twitter_icon.svg") 0 0 no-repeat;
+    }
+
+    @include media($mobile) {
+      .icon:before {
+        display: none;
+      }
+    }
+
+  }
+}
+
 .intro {
   @include outer-container();
   text-align: center;
@@ -22,6 +64,14 @@
   }
 
   .strapline {
+    h1 {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5em;
+    line-height: 1.2em;
+    text-shadow: 0 0 10px $dark-blue;
+    }
+
     @include media($large-screen) {
       @include span-columns(9);
       @include omega();
@@ -31,7 +81,8 @@
 }
 
 .intro-wrapper {
-  background: $light-blue;
+  background: image-url("coderdojo_eagle_view.jpg");
+  background-size: cover;
 }
 
 .mentor-signup {

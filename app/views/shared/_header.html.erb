@@ -6,8 +6,8 @@
     <a href="" class="centered-navigation-menu-button">MENU</a>
     <ul class="centered-navigation-menu">
       <li class="nav-link"><%= link_to t('events-link'), events_path %></li>
-      <li class="nav-link"><%= link_to t('participants'), participants_path %></li>
-      <li class="nav-link"><%= link_to t('mentors'), mentors_path %></li>
+      <li class="nav-link"><%= link_to t('participants-link'), participants_path %></li>
+      <li class="nav-link"><%= link_to t('mentors-link'), mentors_path %></li>
       <li class="nav-link logo">
         <%= link_to root_path, class: "logo" do %>
           <%= image_tag "coderdojo_logo.svg" %>
@@ -19,7 +19,7 @@
           <li><%= link_to t('scratch'), scratch_resources_path %></li>
         </ul>
       </li>
-      <li class="nav-link"><%= link_to t('contact'), contact_path %></li>
+      <li class="nav-link"><%= link_to t('contact-link'), contact_path %></li>
       <li class="nav-link">
         <% if I18n.locale == :fr then %>
           <%= link_to 'EN', set_language_english_path %><span class="active"> / FR</span>

@@ -1,1 +1,7 @@
-<h1>Contact</h1>
+<section class="contact">
+  <h1><%= t '.contact-heading' %></h1>
+  <ul class="contact-list">
+    <li><%= link_to t('.twitter-link'), "http://www.twitter.com/CoderDojoParis", class: "icon twitter" %></li>
+    <li><%= mail_to "paris.fr@coderdojo.com", t('.email-link'), encode: "javascript", class: "icon email" %></li>
+  </ul>
+</section>

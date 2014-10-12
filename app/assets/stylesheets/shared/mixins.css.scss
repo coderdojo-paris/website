@@ -1,3 +1,7 @@
+@mixin first-padding {
+  padding: (em(100) + 2em) 1em 2em 1em;
+}
+
 @mixin standard-padding {
   padding: 2em 1em;
 }

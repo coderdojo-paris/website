@@ -23,6 +23,9 @@ en:
   events-link: "Events"
   google-link: "View in Google Maps"
   resources-link: "Resources"
+  participants-link: "Participants"
+  mentors-link: "Mentors"
+  contact-link: "Contact"
 
   faqs:
     mentors:
@@ -36,6 +39,11 @@ en:
       strapline: "The open source, volunteer led, global movement of free coding clubs for young people"
       mentor-signup-message: "We are always looking for people interested in mentoring"
       mentor-signup-link: "Find out more"
+
+    contact:
+      contact-heading: "Get in touch"
+      twitter-link: "Follow us on twitter"
+      email-link: "Send us an email"
 
   events:
     index:
