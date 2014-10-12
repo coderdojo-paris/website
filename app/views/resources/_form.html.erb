@@ -12,20 +12,29 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :resource_type_id %><br>
-    <%= f.text_field :resource_type_id %>
+    <%= collection_select(:resource, :resource_type_id , ResourceType.all, :id, :name, prompt: "First, please choose the type of Resource this is") %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :title_en, placeholder: "Title in English" %><br>
   </div>
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title_fr, placeholder: "Title in French" %><br>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description_en, placeholder: "Description in English (you can use some very basic html here, e.g. for paragraphs)", :rows => "5" %>
   </div>
   <div class="field">
-    <%= f.label :resource_url %><br>
-    <%= f.text_field :resource_url %>
+    <%= f.text_area :description_fr, placeholder: "Description in French (you can use some very basic html here, e.g. for paragraphs)", :rows => "5" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :button_en, placeholder: "Text for Link In English" %><br>
+  </div>
+  <div class="field">
+    <%= f.text_field :button_fr, placeholder: "Text for Link In English" %><br>
+  </div>
+  <div class="field">
+    <%= f.text_field :resource_url, placeholder: "URL to resource" %>
   </div>
   <div class="actions">
     <%= f.submit %>

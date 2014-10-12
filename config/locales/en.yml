@@ -22,6 +22,7 @@
 en:
   events-link: "Events"
   google-link: "View in Google Maps"
+  resources-link: "Resources"
 
   faqs:
     mentors:
@@ -39,6 +40,10 @@ en:
   events:
     index:
       previous-events-title: "Previous Events"
+
+  resources:
+    index:
+      resource-introduction: "<p>We have two main groups at the Dojo that gives us a lot of flexibility between levels of experience and age.</p><p>Scratch is a software tool for younger or less experience programmers and is a great way to introduce children to programming concepts.</p><p>For the older or more experienced we introduce web development including (depending on skill levelq) HTML, CSS and javascript.</p><p>You can find here some useful resources for both of these to help you prepare for, or continue between Dojos.</p>"
 
   shared:
     next_event:

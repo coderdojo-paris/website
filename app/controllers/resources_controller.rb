@@ -3,7 +3,10 @@ class ResourcesController < ApplicationController
 
   # GET /resources
   def index
-    @resources = Resource.all
+    web = ResourceType.find_by name: 'Web Development'
+    scratch = ResourceType.find_by name: 'Scratch'
+    @web_resources = Resource.where(resource_type: web)
+    @scratch_resources = Resource.where(resource_type: scratch)
   end
 
   def web_development
@@ -14,6 +17,26 @@ class ResourcesController < ApplicationController
   def scratch
     scratch = ResourceType.find_by name: 'Scratch'
     @resources = Resource.where(resource_type: scratch)
+  end
+
+  def move_to_top
+    @resource.move_to_top
+    redirect_to :back
+  end
+
+  def move_higher
+    @resource.move_higher
+    redirect_to :back
+  end
+
+  def move_to_bottom
+    @resource.move_to_bottom
+    redirect_to :back
+  end
+
+  def move_lower
+    @resource.move_lower
+    redirect_to :back
   end
 
   # GET /resources/1
@@ -34,7 +57,7 @@ class ResourcesController < ApplicationController
     @resource = Resource.new(resource_params)
 
     if @resource.save
-      redirect_to @resource, notice: 'Resource was successfully created.'
+      redirect_to resources_path, notice: 'Resource was successfully created.'
     else
       render :new
     end
@@ -43,7 +66,7 @@ class ResourcesController < ApplicationController
   # PATCH/PUT /resources/1
   def update
     if @resource.update(resource_params)
-      redirect_to @resource, notice: 'Resource was successfully updated.'
+      redirect_to resources_path, notice: 'Resource was successfully updated.'
     else
       render :edit
     end
@@ -52,7 +75,7 @@ class ResourcesController < ApplicationController
   # DELETE /resources/1
   def destroy
     @resource.destroy
-    redirect_to resources_url, notice: 'Resource was successfully destroyed.'
+    redirect_to resources_path, notice: 'Resource was successfully destroyed.'
   end
 
   private

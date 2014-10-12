@@ -1,0 +1,5 @@
+<% unless current_user.nil?  %>
+<section class="create-resource">
+  <%= link_to "Create a new resource", new_resource_path, class: "create-resource-button" %>
+</section>
+<% end %>

@@ -1,3 +1,70 @@
 // Place all the styles related to the resources controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+section.create-resource {
+  @include standard-padding;
+  background: $red;
+  text-align: center;
+  .create-resource-button {
+    @include large-button(white, $red);
+  }
+}
+
+section.edit-resource, section.new-resource {
+  @include standard-padding;
+  
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+
+  form {
+    @include outer-container();
+  }
+}
+
+section.resources-intro {
+  @include intro;
+}
+
+section.resources-full-list {
+  @include standard-padding;
+  background: white;
+  h1 {
+    color: $dark-blue;
+    text-align:center;
+  }
+
+  .resources-list {
+    @include standard-list;
+  }
+
+  .resource-details {
+    p {
+      margin: 0.5em;
+      font-size: 1.1em;
+      font-family: 'Anonymous Pro', sans-serif;
+    }
+    text-align: center;
+    @include media($large-screen) {
+      text-align: left;
+      @include span-columns(8);
+    }
+  }
+
+  .resource-action-buttons-list {
+    @include action-buttons-list($light-blue, white);
+  }
+
+  .resource-link {
+    text-align: center;
+    margin-top: 1em;
+    @include media($large-screen) {
+      margin-top: 0;
+      @include span-columns(4);
+    }
+    @include large-button($light-blue, white);
+  }
+}

@@ -52,3 +52,41 @@
     }
   }
 }
+
+@mixin intro {
+  @include standard-padding;
+  background: $light-blue;
+  h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .intro-copy {
+    padding-top: 2em;
+    @include outer-container();
+    @include media($large-screen) {
+      @include prefixer(column-count, 2, webkit moz spec);
+      @include prefixer(column-gap, 5em, webkit moz spec);
+    }
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2em;
+      margin: 0;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@mixin standard-list {
+  @include outer-container;
+  padding: 2em 0;
+  > li {
+    @include row();
+    padding: 2em 0;
+    border-bottom: 1px solid transparentize($dark-blue, 0.8);
+    text-align: center;
+    &:last-child {
+      border: none;
+    }
+  }
+}

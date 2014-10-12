@@ -3,13 +3,13 @@ class FaqsController < ApplicationController
 
   def mentors
     faq_type = FaqType.find_by name: 'Mentor'
-    @faqs = Faq.where(faq_type_id: faq_type.id)
+    @faqs = Faq.where(faq_type_id: faq_type.id).order('position')
   end
 
   def participants
     student = FaqType.find_by name: 'Student'
     parent = FaqType.find_by name: 'Parent'
-    @faqs = Faq.where(faq_type: [student, parent])
+    @faqs = Faq.where(faq_type: [student, parent]).order('position')
   end
 
   def move_to_top
@@ -34,7 +34,7 @@ class FaqsController < ApplicationController
 
   # GET /faqs
   def index
-    @faqs = Faq.all
+    redirect_to root_path
   end
 
   # GET /faqs/1
@@ -55,7 +55,13 @@ class FaqsController < ApplicationController
     @faq = Faq.new(faq_params)
 
     if @faq.save
-      redirect_to @faq, notice: 'Faq was successfully created.'
+      @faq.move_to_top
+      faq_type = @faq.faq_type.name
+      if (faq_type == 'Mentor')
+        redirect_to mentors_path, notice: 'Faq was successfully updated.'
+      else
+        redirect_to participants_path, notice: 'Faq was successfully updated.'
+      end
     else
       render :new
     end
@@ -64,7 +70,12 @@ class FaqsController < ApplicationController
   # PATCH/PUT /faqs/1
   def update
     if @faq.update(faq_params)
-      redirect_to @faq, notice: 'Faq was successfully updated.'
+      faq_type = @faq.faq_type.name
+      if (faq_type == 'Mentor')
+        redirect_to mentors_path, notice: 'Faq was successfully created.'
+      else
+        redirect_to participants_path, notice: 'Faq was successfully created.'
+      end
     else
       render :edit
     end
@@ -73,7 +84,7 @@ class FaqsController < ApplicationController
   # DELETE /faqs/1
   def destroy
     @faq.destroy
-    redirect_to faqs_url, notice: 'Faq was successfully destroyed.'
+    redirect_to :back, notice: 'Faq was successfully destroyed.'
   end
 
   private

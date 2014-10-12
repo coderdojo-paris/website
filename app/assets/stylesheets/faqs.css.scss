@@ -26,27 +26,7 @@ section.edit-faq, section.new-faq {
 }
 
 section.mentors-intro, section.participants-intro {
-  @include standard-padding;
-  background: $light-blue;
-  h1 {
-    color: white;
-    text-align: center;
-  }
-
-  .intro-copy {
-    padding-top: 2em;
-    @include outer-container();
-    @include media($large-screen) {
-      @include prefixer(column-count, 2, webkit moz spec);
-      @include prefixer(column-gap, 5em, webkit moz spec);
-    }
-    p {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.2em;
-      margin: 0;
-      margin-bottom: 1em;
-    }
-  }
+  @include intro;
 }
 
 section.faqs {

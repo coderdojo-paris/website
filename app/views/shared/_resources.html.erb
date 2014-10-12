@@ -1,0 +1,21 @@
+<li>
+  <div class="resource-details">
+    <h3><%= resources.title %></h3>
+    <p><%= resources.description %></p>
+    <% unless current_user.nil? %>
+      <ul class="resource-action-buttons-list">
+        <li><%= link_to 'Edit', edit_resource_path(resources) %></li>
+        <li><%= link_to 'Destroy', resources, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <% unless resources.first? %>
+          <li><%= link_to '↑', move_higher_resource_path(resources) %></li>
+          <li><%= link_to '↑↑', move_to_top_resource_path(resources) %></li>
+        <% end %>
+        <% unless resources.last? %>
+          <li><%= link_to '↓', move_lower_resource_path(resources) %></li>
+          <li><%= link_to '↓↓', move_to_bottom_resource_path(resources) %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+  <%= link_to resources.button, resources.resource_url, class: "resource-link" %>
+</li>

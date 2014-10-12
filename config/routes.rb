@@ -13,6 +13,12 @@ Rails.application.routes.draw do
       get 'web_development'
       get 'scratch'
     end
+    member do
+      get 'move_to_bottom'
+      get 'move_to_top'
+      get 'move_higher'
+      get 'move_lower'
+    end
   end
   resources :venues
   resources :events

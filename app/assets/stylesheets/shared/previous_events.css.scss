@@ -12,17 +12,7 @@ section.previous-events {
   }
 
   .previous-events-list {
-    @include outer-container;
-    padding: 2em 0;
-    li.previous-event {
-      @include row();
-      padding: 2em 0;
-      border-bottom: 1px solid transparentize($dark-blue, 0.8);
-      text-align: center;
-      &:last-child {
-        border: none;
-      }
-    }
+    @include standard-list;
   }
 
   .previous-events-action-buttons-list {

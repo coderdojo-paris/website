@@ -89,10 +89,39 @@ scratch = ResourceType.create(
 )
 
 starter_kit = Resource.create(
-  title: "HTML Starter Kit",
-  description: "Basic HTML, CSS and JS template files to begin creating a website.",
+  position: 10,
+  title_en: "HTML Starter Kit",
+  title_fr: "HTML Starter Kit",
+  description_en: "Basic HTML, CSS and JS template files to begin creating a website.",
+  description_fr: "Basic HTML, CSS and JS template files to begin creating a website.",
+  button_en: "Download Starter Kit",
+  button_fr: "Télécharger Starter Kit",
   resource_url: "https://github.com/coderdojo-paris/coderdojo-paris.github.io/raw/master/starterkit.zip",
   resource_type: web
+)
+
+scratch_link = Resource.create(
+  position: 5,
+  title_en: "Scratch Website",
+  title_fr: "HTML Starter Kit",
+  description_en: "The official MIT website where you can download Scratch.",
+  description_fr: "Basic HTML, CSS and JS template files to begin creating a website.",
+  button_en: "View Website",
+  button_fr: "Télécharger Starter Kit",
+  resource_url: "https://docs.google.com/presentation/d/10VsVcGG1XdlQ4PXGLanNJDp-T8E2t4fujAUoWJRaonQ/edit",
+  resource_type: scratch
+)
+
+scratch_pres = Resource.create(
+  position: 10,
+  title_en: "Scratch Presentation",
+  title_fr: "HTML Starter Kit",
+  description_en: "A google document presentation for getting started with scratch.",
+  description_fr: "Basic HTML, CSS and JS template files to begin creating a website.",
+  button_en: "View Presentation",
+  button_fr: "Télécharger Starter Kit",
+  resource_url: "https://docs.google.com/presentation/d/10VsVcGG1XdlQ4PXGLanNJDp-T8E2t4fujAUoWJRaonQ/edit",
+  resource_type: scratch
 )
 
 student = FaqType.create(
@@ -158,6 +187,15 @@ mentor_rules = Faq.create(
   title_fr: "Quelles sont les règles?",
   content_en: "There is only one rule — above all : be cool.",
   content_fr: "Il n'y a qu'une seule règle — avant tout : soyez cool.",
+  faq_type: mentor
+)
+
+mentor_contact = Faq.create(
+  position: 60,
+  title_en: "I still have some questions, who do I ask?",
+  title_fr: "Example Title in French 3",
+  content_en: "If you still are unsure about how the dojo works or what you can do to help, feel free to <a href='/contact'>get in touch</a>",
+  content_fr: "Body text in French 3",
   faq_type: mentor
 )
 

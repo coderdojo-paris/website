@@ -5,4 +5,6 @@ class Faq < ActiveRecord::Base
   belongs_to :faq_type
 
   translates :title, :content
+
+  validates_presence_of :faq_type, :title, :content
 end
