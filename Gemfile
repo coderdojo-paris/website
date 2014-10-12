@@ -12,6 +12,9 @@ gem 'foreman', '~> 0.75.0'
 # SERVER
 gem 'unicorn', '~> 4.8.3'
 
+# HEROKU
+gem 'rails_12factor', group: :production
+
 
 # JS
 gem 'jquery-rails'
