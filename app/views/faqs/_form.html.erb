@@ -10,26 +10,20 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
-    <%= f.label :title_en %><br>
-    <%= f.text_field :title_en %>
+    <%= collection_select(:faq, :faq_type_id , FaqType.all, :id, :name, prompt: "First, please choose the type of FAQ this is") %>
   </div>
   <div class="field">
-    <%= f.label :title_fr %><br>
-    <%= f.text_field :title_fr %>
+    <%= f.text_field :title_en, placeholder: "Title in English" %>
   </div>
   <div class="field">
-    <%= f.label :content_en %><br>
-    <%= f.text_area :content_en %>
+    <%= f.text_field :title_fr, placeholder: "Title in French" %>
   </div>
   <div class="field">
-    <%= f.label :content_fr %><br>
-    <%= f.text_area :content_fr %>
+    <%= f.text_area :content_en, placeholder: "Content in English (you can use some very basic html here, e.g. for paragraphs)", :rows => "5" %>
   </div>
   <div class="field">
-    <%= f.label :faq_type_id %><br>
-    <%= f.text_field :faq_type_id %>
+    <%= f.text_area :content_fr, placeholder: "Content in French (you can use some very basic html here, e.g. for paragraphs)", :rows => "5" %>
   </div>
   <div class="actions">
     <%= f.submit %>

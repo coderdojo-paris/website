@@ -23,6 +23,13 @@ en:
   events-link: "Events"
   google-link: "View in Google Maps"
 
+  faqs:
+    mentors:
+      mentor-introduction: "<p>We are always looking for technically skilled mentors to help out, for a couple of hours a month, helping share their knowledge with local young people.</p><p>Volunteering at a Dojo can be a rewarding experience, and might not require as much as you think. It gives you an opportunity to help kids learn how to code, and an opportunity to learn new skills and technologies.</p><p>We are also always looking for volunteers to help with a wide array of other not so technical tasks, from registration and administration through to keeping this website up to date.</p>"
+
+    participants:
+      participants-introduction: "<p>CoderDojo is a fun and social space where young people, between 7 and 17, can go to explore technology together and get advice and support from skilled mentors.</p><p>In Dojos young people get the opportunity to make apps, websites, games, play with robotics and more!</p><p>We do require parents to join their child for the duration of the Dojo session.</p><p>This enables the volunteer mentors to concentrate on assisting the young people with their development, while parents ensure their children are behaved, or help out with the running of the Dojo.</p>"
+
   home:
     index:
       strapline: "The open source, volunteer led, global movement of free coding clubs for young people"
