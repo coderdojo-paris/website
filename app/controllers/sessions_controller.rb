@@ -11,7 +11,11 @@ class SessionsController < ApplicationController
     password = params[:password]
     if (login == ENV['LOGIN_NAME'] && password == ENV['PASSWORD'])
       session[:user] = login
-      redirect_to :back, :notice => "Signed in"
+      begin
+        redirect_to :back, :notice => "Signed in"
+      rescue ActionController::RedirectBackError
+        redirect_to root_path, :notice => "Signed in"
+      end
     else
       flash.now[:error] = "Couldn't sign in with those details."
       render "new"

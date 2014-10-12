@@ -45,4 +45,6 @@ $(document).ready(function() {
     $("#modal-window-bg").fadeOut();
     $("#modal-window").fadeOut();
   });
+
+  $('.flash').delay(1000).fadeOut();
 });

@@ -1,4 +1,7 @@
 @mixin flash($color) {
+  position: absolute;
+  width: 100%;
+  display: block;
   background: lighten($color, 40);
   color: $color;
   font-family: 'Anonymous Pro', sans-serif;
