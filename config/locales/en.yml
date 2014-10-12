@@ -20,7 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  events-link: "Events"
+  events-link: "Événements"
   google-link: "View in Google Maps"
   resources-link: "Resources"
   participants-link: "Participants"
