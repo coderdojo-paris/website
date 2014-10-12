@@ -20,19 +20,19 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  events-link: "Événements"
-  google-link: "Voir sur Google Maps"
-  resources-link: "Ressources"
+  events-link: "Events"
+  google-link: "View in Google Maps"
+  resources-link: "Resources"
   participants-link: "Participants"
   mentors-link: "Mentors"
   contact-link: "Contact"
 
   faqs:
     mentors:
-      mentor-introduction: "<p>We sommes toujours à la recherche de mentors ayant le savoir technique pour aider, durant deux heures par mois, en partageant leurs connaissances avec des jeunes.</p><p>Etre bénévole lors d'un Dojo peut se réveler être une expérience gratifiante, et requiert probablement moins que ce que vous imaginez. Cela vous donne l'opportunité d'apprendre à coder à des enfant, ainsi que d'apprendre de nouveaux savoirs et technologies.</p><p>We sommes également toujours à la recherche de bénévoles pour aider à d'autres tâches peut-être moins techniques, de l'enregistrement à l'administratif jusqu'au fait de garder ce site à jour.</p>"
+      mentor-introduction: "<p>We are always looking for technically skilled mentors to help out, for a couple of hours a month, helping share their knowledge with local young people.</p><p>Volunteering at a Dojo can be a rewarding experience, and might not require as much as you think. It gives you an opportunity to help kids learn how to code, and an opportunity to learn new skills and technologies.</p><p>We are also always looking for volunteers to help with a wide array of other not so technical tasks, from registration and administration through to keeping this website up to date.</p>"
 
     participants:
-      participants-introduction: "<p>Coderdojo est un espace amusant et social où les enfants, de 7 à 17 ans, peuvent venir explorer la technologie ensemble, et recevoir les conseils et le soutien de mentors expérimentés.</p><p>In Dojos young people get the opportunity to make apps, websites, games, play with robotics and more!</p><p>We do require parents to join their child for the duration of the Dojo session.</p><p>This enables the volunteer mentors to concentrate on assisting the young people with their development, while parents ensure their children are behaved, or help out with the running of the Dojo.</p>"
+      participants-introduction: "<p>CoderDojo is a fun and social space where young people, between 7 and 17, can go to explore technology together and get advice and support from skilled mentors.</p><p>In Dojos young people get the opportunity to make apps, websites, games, play with robotics and more!</p><p>We do require parents to join their child for the duration of the Dojo session.</p><p>This enables the volunteer mentors to concentrate on assisting the young people with their development, while parents ensure their children are behaved, or help out with the running of the Dojo.</p>"
 
   home:
     index:
