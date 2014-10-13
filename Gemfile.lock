@@ -105,6 +105,7 @@ GEM
     neat (1.5.1)
       bourbon (>= 3.1)
       sass (~> 3.2.19)
+    newrelic_rpm (3.9.5.251)
     pg (0.17.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -189,6 +190,7 @@ DEPENDENCIES
   jquery-turbolinks (~> 0.2.1)
   leaflet-rails (~> 0.7.4)
   neat (~> 1.5.1)
+  newrelic_rpm (~> 3.9.5.251)
   pg
   rails (= 4.1.6)
   rails_12factor
