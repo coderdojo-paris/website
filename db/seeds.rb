@@ -103,11 +103,11 @@ starter_kit = Resource.create(
 scratch_link = Resource.create(
   position: 5,
   title_en: "Scratch Website",
-  title_fr: "HTML Starter Kit",
+  title_fr: "Scratch Website",
   description_en: "The official MIT website where you can download Scratch.",
-  description_fr: "Basic HTML, CSS and JS template files to begin creating a website.",
+  description_fr: "The official MIT website where you can download Scratch.",
   button_en: "View Website",
-  button_fr: "Télécharger Starter Kit",
+  button_fr: "View Website",
   resource_url: "https://docs.google.com/presentation/d/10VsVcGG1XdlQ4PXGLanNJDp-T8E2t4fujAUoWJRaonQ/edit",
   resource_type: scratch
 )
@@ -115,11 +115,11 @@ scratch_link = Resource.create(
 scratch_pres = Resource.create(
   position: 10,
   title_en: "Scratch Presentation",
-  title_fr: "HTML Starter Kit",
+  title_fr: "Scratch Presentation",
   description_en: "A google document presentation for getting started with scratch.",
-  description_fr: "Basic HTML, CSS and JS template files to begin creating a website.",
+  description_fr: "A google document presentation for getting started with scratch.",
   button_en: "View Presentation",
-  button_fr: "Télécharger Starter Kit",
+  button_fr: "View Presentation",
   resource_url: "https://docs.google.com/presentation/d/10VsVcGG1XdlQ4PXGLanNJDp-T8E2t4fujAUoWJRaonQ/edit",
   resource_type: scratch
 )

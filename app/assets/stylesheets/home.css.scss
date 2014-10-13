@@ -65,14 +65,17 @@ section.contact {
 
   .strapline {
     h1 {
+    padding-left: 1em;
+    padding-right: 1em;
     color: white;
     font-family: "Montserrat", sans-serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     line-height: 1.2em;
     text-shadow: 0 0 10px $dark-blue;
     }
 
     @include media($large-screen) {
+      font-size: 2.5em;
       @include span-columns(9);
       @include omega();
     }
