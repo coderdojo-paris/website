@@ -13,13 +13,15 @@ fr:
   participants-link: "Participants"
   mentors-link: "Mentors"
   contact-link: "Contact"
+  sign-in-link: "Connexion"
+  sign-out-link: "Deconnexion"
 
   faqs:
     mentors:
       mentor-introduction: "<p>Nous sommes toujours à la recherche de mentors ayant les connaissances informatiques suffisantes pour les partager, deux heures par mois, avec des jeunes.</p><p>Être bénévole lors d'un Dojo peut se révéler être une expérience gratifiante, et requiert probablement moins que ce que vous vous imaginez. Cela vous donne l'opportunité d'apprendre à coder à des jeunes, ainsi que pour vous d'apprendre de nouveaux savoirs et techniques.</p><p>Nous sommes également toujours à la recherche de bénévoles pour aider à d'autres tâches moins techniques, de l'organisation/logistique des évènements... jusqu'à garder ce site à jour.</p>"
 
     participants:
-      participants-introduction: "<p>Coderdojo est un espace ludique et social où les enfants, de 7 à 17 ans, peuvent venir explorer en groupe la programmation, et recevoir les conseils et le soutien de mentors expérimentés.</p><p>Durant les Dojos, les enfants ont l'opportunité de créer des apps, sites Internet, jeux, de jouer avec de la robotique et plus encore!</p><p>Nous demandons aux parents de se joindre à leur enfant pendant la durée de la session Dojo.</p><p>Cela permet aux mentors de se concentrer sur l'aide qu'ils apportent aux jeunes pendant qu'ils développent. Les parents s'assurent que les jeunes restent sages, ou aident au bon déroulement du Dojo.</p>"
+      participants-introduction: "<p>Coderdojo est un espace ludique et collaboratif où les enfants, de 7 à 17 ans, peuvent venir explorer en groupe la programmation, et recevoir les conseils et le soutien de mentors expérimentés.</p><p>Durant les Dojos, les enfants ont l'opportunité de créer des apps, sites Internet, jeux, de jouer avec de la robotique et plus encore!</p><p>Nous demandons aux parents de se joindre à leur enfant pendant la durée de la session Dojo.</p><p>Cela permet aux mentors de se concentrer sur l'aide qu'ils apportent aux jeunes pendant qu'ils développent. Les parents s'assurent que les jeunes restent sages, ou aident au bon déroulement du Dojo.</p>"
 
   home:
     index:

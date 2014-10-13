@@ -93,7 +93,7 @@ starter_kit = Resource.create(
   title_en: "HTML Starter Kit",
   title_fr: "HTML Starter Kit",
   description_en: "Basic HTML, CSS and JS template files to begin creating a website.",
-  description_fr: "Basic HTML, CSS and JS template files to begin creating a website.",
+  description_fr: "HTML de base , les fichiers CSS et JS modèles pour commencer la création d'un site web .",
   button_en: "Download Starter Kit",
   button_fr: "Télécharger Starter Kit",
   resource_url: "https://github.com/coderdojo-paris/coderdojo-paris.github.io/raw/master/starterkit.zip",
@@ -103,11 +103,11 @@ starter_kit = Resource.create(
 scratch_link = Resource.create(
   position: 5,
   title_en: "Scratch Website",
-  title_fr: "Scratch Website",
+  title_fr: "Scratch Site",
   description_en: "The official MIT website where you can download Scratch.",
-  description_fr: "The official MIT website where you can download Scratch.",
+  description_fr: "Le site du MIT officiel où vous pouvez télécharger Scratch.",
   button_en: "View Website",
-  button_fr: "View Website",
+  button_fr: "Voir le site",
   resource_url: "https://docs.google.com/presentation/d/10VsVcGG1XdlQ4PXGLanNJDp-T8E2t4fujAUoWJRaonQ/edit",
   resource_type: scratch
 )
@@ -115,11 +115,11 @@ scratch_link = Resource.create(
 scratch_pres = Resource.create(
   position: 10,
   title_en: "Scratch Presentation",
-  title_fr: "Scratch Presentation",
+  title_fr: "Scratch Présentation",
   description_en: "A google document presentation for getting started with scratch.",
-  description_fr: "A google document presentation for getting started with scratch.",
+  description_fr: "Un document google présentation pour débuter avec Scratch.",
   button_en: "View Presentation",
-  button_fr: "View Presentation",
+  button_fr: "Voir la présentation",
   resource_url: "https://docs.google.com/presentation/d/10VsVcGG1XdlQ4PXGLanNJDp-T8E2t4fujAUoWJRaonQ/edit",
   resource_type: scratch
 )
@@ -139,45 +139,45 @@ mentor = FaqType.create(
 mentor_kids = Faq.create(
   position: 10,
   title_en: "How many children will there be and what ages?",
-  title_fr: "Example Title in French",
-  content_en: "In general there are around 30 children, with around half of them in the 8 and 10 age round with some older and some younger",
-  content_fr: "Body text in French",
+  title_fr: "Combien d'enfants qu'il y aura et quels âges ?",
+  content_en: "In general there are around 30 children, with around half of them in the 8 and 10 age round with some older and some younger.",
+  content_fr: "En général , il ya environ 30 enfants , avec près de la moitié d'entre eux dans le rond de 8 et 10 ans avec un peu plus et un peu plus jeune .",
   faq_type: mentor
 )
 
 mentor_timing = Faq.create(
   position: 20,
   title_en: "How long does the dojo last?",
-  title_fr: "Example Title in French 2",
+  title_fr: "Combien de temps dure le dojo durer ?",
   content_en: "The actual dojo lasts from 2pm — 5pm, but the ideal is to arrive a little beforehand so that we can organise (around 1pm) and then a little time after to help pack up. Any time you cna give is appreciated though and these are not hard rules.",
-  content_fr: "Body text in French 2",
+  content_fr: "Le dojo actuel dure de 14 h - 17 h, mais l'idéal est d' arriver un peu à l'avance afin que nous puissions organiser (environ 13 h), puis peu de temps après pour aider à emballer . Chaque fois que vous cna donner est apprécié bien et ce ne sont pas des règles strictes .",
   faq_type: mentor
 )
 
 mentor_skills = Faq.create(
   position: 30,
   title_en: "What will I be doing?",
-  title_fr: "Example Title in French 3",
+  title_fr: "Que vais-je faire ?",
   content_en: "There are two main themes, Scratch for the younger children and HTML / CSS & some Javascript for the older children. Help with either is great — alternatively you may have something in particular you would like to teach which is also appreciated.",
-  content_fr: "Body text in French 3",
+  content_fr: "Il ya deux thèmes principaux , Scratch pour les jeunes enfants et HTML / CSS et du Javascript pour les enfants plus âgés . Aide à l' une ou l'autre est grande - sinon vous pouvez avoir quelque chose en particulier que vous souhaitez enseigner qui est également apprécié .",
   faq_type: mentor
 )
 
 mentor_attitude = Faq.create(
   position: 40,
   title_en: "Do I need to be a programming genius to help?",
-  title_fr: "Example Title in French 3",
+  title_fr: "Ai-je besoin d'être un génie de la programmation pour aider ?",
   content_en: "In a word no — the main thing is to have fun and be enthusiastic. You can also ask the advice of other mentors if something is beyond your level of expertise.",
-  content_fr: "Body text in French 3",
+  content_fr: "En un mot non - la chose principale est d'avoir du plaisir et être enthousiaste . Vous pouvez également demander l'avis d'autres mentors si quelque chose est au-delà de votre niveau d'expertise .",
   faq_type: mentor
 )
 
 mentor_stuff = Faq.create(
   position: 45,
   title_en: "What should I bring?",
-  title_fr: "Example Title in French 3",
+  title_fr: "Que dois-je faire ?",
   content_en: "Most mentors tend to bring a laptop or similar with them, but this isn’t essential. Snacks and drinks are provided.",
-  content_fr: "Body text in French 3",
+  content_fr: "La plupart des mentors ont tendance à apporter un ordinateur portable ou similaire avec eux , mais ce n'est pas essentiel. Des collations et des boissons sont fournis.",
   faq_type: mentor
 )
 
@@ -193,16 +193,16 @@ mentor_rules = Faq.create(
 mentor_contact = Faq.create(
   position: 60,
   title_en: "I still have some questions, who do I ask?",
-  title_fr: "Example Title in French 3",
+  title_fr: "J'ai encore quelques questions, qui dois-je m'adresser ?",
   content_en: "If you still are unsure about how the dojo works or what you can do to help, feel free to <a href='/contact'>get in touch</a>",
-  content_fr: "Body text in French 3",
+  content_fr: "Si vous n'êtes toujours pas sûr de la façon dont le dojo fonctionne ou ce que vous pouvez faire pour aider , n'hésitez pas à <a href='/contact'> entrer en contact </a>",
   faq_type: mentor
 )
 
 student_age = Faq.create(
   position: 100,
   title_en: "Is there an older or younger age limit for students?",
-  title_fr: "Y at-il une limite plus ou moins l’âge pour les étudiants?",
+  title_fr: "Y-a-t-il une limite d'âge pour les enfants participants ?",
   content_en: "The Dojo is open to all children from 7-17 years. Children under 13 must be accompanied by a parent.",
   content_fr: "Le club est ouvert à tous les jeunes de 7 à 17 ans. Les enfants de moins de 13 ans doivent être accompagnés d’un parent.",
   faq_type: student
@@ -211,7 +211,7 @@ student_age = Faq.create(
 student_timing = Faq.create(
   position: 120,
   title_en: "How long does the dojo last?",
-  title_fr: "Example Title in French 2",
+  title_fr: "Combien de temps dure le dojo durer ?",
   content_en: "Each session is on a Saturday afternoon from 2pm — 5pm",
   content_fr: "Chaque session aura lieu le samedi après-midi de 14H à 17H",
   faq_type: student
@@ -220,9 +220,9 @@ student_timing = Faq.create(
 student_stuff = Faq.create(
   position: 145,
   title_en: "What should I bring?",
-  title_fr: "Example Title in French 3",
+  title_fr: "Que dois-je faire ?",
   content_en: "All young people should bring with them a laptop (or whatever they have borrowed) computer. Snacks and drinks are provided.",
-  content_fr: "Tous les jeunes doivent apporter leur propre ordinateur portable (ou celui qu’ils ont emprunté)",
+  content_fr: "Tous les jeunes doivent apporter leur propre ordinateur portable (ou celui qu’ils ont emprunté). Des collations et des boissons sont fournis.",
   faq_type: student
 )
 
@@ -238,8 +238,8 @@ student_rules = Faq.create(
 student_contact = Faq.create(
   position: 160,
   title_en: "I still have some questions, who do I ask?",
-  title_fr: "Example Title in French 3",
+  title_fr: "J'ai encore quelques questions, qui dois-je m'adresser ?",
   content_en: "If you still are unsure about how the dojo works or what you can do to help, feel free to <a href='/contact'>get in touch</a>",
-  content_fr: "Body text in French 3",
+  content_fr: "Si vous n'êtes toujours pas sûr de la façon dont le dojo fonctionne ou ce que vous pouvez faire pour aider , n'hésitez pas à <a href='/contact'> entrer en contact </a>",
   faq_type: student
 )

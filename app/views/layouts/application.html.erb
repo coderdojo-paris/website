@@ -31,9 +31,9 @@
   <div class="content">
     <p class="authentication-link">
       <% if signed_in? %>
-        <%= link_to t('sign-out'), sign_out_path %>
+        <%= link_to t('sign-out-link'), sign_out_path %>
       <% else %>
-        <%= link_to t('sign-in'), sign_in_path, class: "sign-in-link", remote: true %>
+        <%= link_to t('sign-in-link'), sign_in_path, class: "sign-in-link", remote: true %>
       <% end %>
     </p>
     <p>© copyright 2014</p>
