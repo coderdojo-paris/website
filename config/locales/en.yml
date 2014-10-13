@@ -60,7 +60,7 @@ en:
       sign-up-event: "Reserve a place"
 
     previous_events:
-      view-event-link: "View event"
+      view-event-link: "View Event"
 
   time:
     formats:
