@@ -26,12 +26,12 @@ fr:
   home:
     index:
       strapline: "CoderDojo Paris fait partie d'un mouvement mondial regroupant des clubs permettant aux jeunes d’apprendre à coder gratuitement auprès de bénévoles."
-      mentor-signup-message: "Nous sommes toujours à la recherche de personnes intéréssées par le mentoring."
+      mentor-signup-message: "Nous sommes toujours à la recherche de personnes intéréssées pour devenir mentor."
       mentor-signup-link: "En savoir plus"
 
     contact:
       contact-heading: "Contactez-nous"
-      twitter-link: "Suivez-nous twitter"
+      twitter-link: "Suivez-nous Twitter"
       email-link: "Envoyez-nous un email"
 
   events:
