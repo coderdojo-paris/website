@@ -1,4 +1,5 @@
 class ResourcesController < ApplicationController
+  before_filter :authorize, only: [:new, :edit, :update, :destroy]
   before_action :set_resource, only: [:show, :edit, :update, :destroy]
 
   # GET /resources
@@ -86,6 +87,6 @@ class ResourcesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def resource_params
-      params.require(:resource).permit(:resource_type_id, :title, :description, :resource_url)
+      params.require(:resource).permit(:resource_type_id, :title_en, :title_fr, :description_en, :description_fr, :button_en, :button_fr, :resource_url)
     end
 end
