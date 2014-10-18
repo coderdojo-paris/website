@@ -15,6 +15,7 @@ fr:
   contact-link: "Contact"
   sign-in-link: "Connexion"
   sign-out-link: "Deconnexion"
+  today-event-title: "Événement Aujourd’hui"
 
   faqs:
     mentors:

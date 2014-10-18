@@ -8,4 +8,8 @@ class Event < ActiveRecord::Base
   def self.next
     where("start > ?", Time.zone.now)
   end
+
+  def self.today
+    where(start: (Time.zone.now.midnight)..(Time.zone.now.midnight + 1.day))
+  end
 end
