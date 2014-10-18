@@ -4,7 +4,7 @@
 </section>
 <% end %>
 
-<%= render partial: 'shared/next_event', object: @next_event %>
+<%= render partial: 'shared/next_event', object: @next_event if @next_event %>
 
 <section class="previous-events">
   <h1><%= t '.previous-events-title' %></h1>

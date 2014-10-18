@@ -1,6 +1,6 @@
 class ResourcesController < ApplicationController
   before_filter :authorize, only: [:new, :edit, :update, :destroy]
-  before_action :set_resource, only: [:show, :edit, :update, :destroy]
+  before_action :set_resource, only: [:show, :edit, :update, :destroy, :move_to_bottom, :move_lower, :move_to_top, :move_higher]
 
   # GET /resources
   def index

@@ -13,4 +13,4 @@
   <p><%= t '.mentor-signup-message' %><%= link_to t('.mentor-signup-link'), mentors_path %></p>
 </section>
 
-<%= render partial: 'shared/next_event', object: @next_event %>
+<%= render partial: 'shared/next_event', object: @next_event if @next_event%>
