@@ -20,3 +20,7 @@
 
 # Secrets too
 /config/secrets.yml
+
+# OSX
+
+.DS_Store
