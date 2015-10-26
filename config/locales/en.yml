@@ -39,6 +39,7 @@ en:
 
   home:
     index:
+      next-events: "Next Events"
       strapline: "The open source volunteer led, global movement of free coding clubs for young people"
       mentor-signup-message: "We are always looking for people interested in mentoring"
       mentor-signup-link: "Find out more"
@@ -50,6 +51,7 @@ en:
 
   events:
     index:
+      next-events: "Next Events"
       previous-events-title: "Previous Events"
 
   resources:
