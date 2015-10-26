@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @next_event = Event.next.first
+    @next_events = Event.next.order(start: :asc)
     @today_event = Event.today.first
   end
 

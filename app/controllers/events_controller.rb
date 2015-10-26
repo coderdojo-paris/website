@@ -4,7 +4,7 @@ class EventsController < ApplicationController
 
   # GET /events
   def index
-    @next_event = Event.next.first
+    @next_events = Event.next.order(start: :asc)
     @today_event = Event.today.first
     @previous_events = Event.previous
   end

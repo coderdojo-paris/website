@@ -13,5 +13,13 @@
   <p><%= t '.mentor-signup-message' %><%= link_to t('.mentor-signup-link'), mentors_path %></p>
 </section>
 
-<%= render partial: 'shared/next_event', object: @next_event if @next_event%>
 <%= render partial: 'shared/today_event', object: @today_event if @today_event%>
+
+<% unless @next_events.nil? %>
+  <section class="next-event">
+    <h1><%= t '.next-events' %></h1>
+    <ul class="next-events-list">
+      <%= render partial: 'shared/next_event', collection: @next_events %>
+    </ul>
+  </section>
+<% end %>

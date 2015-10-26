@@ -29,6 +29,7 @@ fr:
       strapline: "CoderDojo Paris fait partie d'un mouvement mondial regroupant des clubs permettant aux jeunes d’apprendre à coder gratuitement auprès de bénévoles."
       mentor-signup-message: "Nous sommes toujours à la recherche de personnes intéréssées pour devenir mentor."
       mentor-signup-link: "En savoir plus"
+      next-events: "Prochaines Événements"
 
     contact:
       contact-heading: "Contactez-nous"
@@ -37,6 +38,7 @@ fr:
 
   events:
     index:
+      next-events: "Prochaines Événements"
       previous-events-title: "Événements Précédents"
 
   resources:

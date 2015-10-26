@@ -24,9 +24,8 @@ section.next-event {
     color: white;
   }
 
-  .next-event-wrapper {
-    margin-top: 2em;
-    @include outer-container();
+  .next-events-list {
+    @include standard-list;
   }
 
   .next-event-details {
@@ -49,7 +48,7 @@ section.next-event {
     @include action-buttons-list($dark-blue, $light-blue);
   }
 
-  #next-event-map {
+  .leaflet-container {
     height: 20em;
     border: 2px solid white;
   }
