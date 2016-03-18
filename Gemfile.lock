@@ -56,7 +56,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
-    eventmachine (1.0.3)
+    eventmachine (1.2.0.1)
     execjs (2.2.1)
     ffi (1.9.3)
     figaro (1.0.0)
@@ -181,6 +181,7 @@ DEPENDENCIES
   actionview-encoded_mail_to (~> 1.0.5)
   acts_as_list (~> 0.4.0)
   bourbon (~> 3.2.1)
+  eventmachine (~> 1.2, >= 1.2.0.1)
   figaro (~> 1.0.0)
   foreman (~> 0.75.0)
   guard-livereload (~> 2.3.0)
@@ -199,3 +200,6 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   unicorn (~> 4.8.3)
+
+BUNDLED WITH
+   1.11.2
