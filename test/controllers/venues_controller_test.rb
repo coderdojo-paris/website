@@ -18,7 +18,7 @@ class VenuesControllerTest < ActionController::TestCase
 
   test "should create venue" do
     assert_difference('Venue.count') do
-      post :create, venue: { address: @venue.address, city: @venue.city, company_url: @venue.company_url, country: @venue.country, event: @venue.event, googlemaps_url: @venue.googlemaps_url, latitude: @venue.latitude, longitude: @venue.longitude, name: @venue.name, postcode: @venue.postcode }
+      post :create, venue: { address: @venue.address, city: @venue.city, company_url: @venue.company_url, country: @venue.country, event: @venue.event, googlemaps_url: @venue.googlemaps_url, latitude: @venue.latitude, longtitude: @venue.longtitude, name: @venue.name, postcode: @venue.postcode }
     end
 
     assert_redirected_to venue_path(assigns(:venue))
@@ -35,7 +35,7 @@ class VenuesControllerTest < ActionController::TestCase
   end
 
   test "should update venue" do
-    patch :update, id: @venue, venue: { address: @venue.address, city: @venue.city, company_url: @venue.company_url, country: @venue.country, event: @venue.event, googlemaps_url: @venue.googlemaps_url, latitude: @venue.latitude, longitude: @venue.longitude, name: @venue.name, postcode: @venue.postcode }
+    patch :update, id: @venue, venue: { address: @venue.address, city: @venue.city, company_url: @venue.company_url, country: @venue.country, event: @venue.event, googlemaps_url: @venue.googlemaps_url, latitude: @venue.latitude, longtitude: @venue.longtitude, name: @venue.name, postcode: @venue.postcode }
     assert_redirected_to venue_path(assigns(:venue))
   end
 

@@ -8,7 +8,7 @@ one:
   country: MyString
   event: 
   latitude: 1.5
-  longitude: 1.5
+  longtitude: 1.5
   googlemaps_url: MyString
   company_url: MyString
 
@@ -20,6 +20,6 @@ two:
   country: MyString
   event: 
   latitude: 1.5
-  longitude: 1.5
+  longtitude: 1.5
   googlemaps_url: MyString
   company_url: MyString
