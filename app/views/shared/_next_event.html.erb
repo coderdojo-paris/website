@@ -3,7 +3,11 @@
     <h2 class="event-date"><%= l(next_event.start, :format => :start_date).titlecase %> — <%= l(next_event.end, :format => :end_date).titlecase %></h2>
     <h5 class="event-venue"><%= render partial: 'shared/venue', object: next_event.venue %></h5>
     <p><%= t '.signup-copy' %></p>
+    <% if next_event.signup_link.present? %>
     <%= link_to t('.sign-up-event'), next_event.signup_link, class: "signup-action-button" %>
+    <% else %>
+      <p>Signup link not yet available.</p>
+    <% end %>
     <% unless current_user.nil? %>
       <ul class="next-event-action-buttons-list">
         <li><%= link_to 'Edit', edit_event_path(next_event) %></li>
