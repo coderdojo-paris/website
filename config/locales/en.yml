@@ -63,6 +63,7 @@ en:
       next-event: "Next Event"
       signup-copy: "Places are limited so please reserve a place now if you'd like to attend."
       sign-up-event: "Reserve a place"
+      no-signup-link: "Tickets not yet available"
 
     previous_events:
       view-event-link: "View Event"

@@ -50,6 +50,7 @@ fr:
       next-event: "Prochain Événement"
       signup-copy: "Les places étant limitées, n'oubliez pas de réserver pour être certain(e) de pouvoir participer."
       sign-up-event: "Réserver une place"
+      no-signup-link: "Les billets ne sont pas encore disponibles"
 
     previous_events:
       view-event-link: "Voir l'Événement"
