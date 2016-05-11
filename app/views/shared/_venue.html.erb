@@ -1,1 +1,2 @@
-<%= venue.name %>, <%= venue.address %>, <%= venue.postcode %>, <%= venue.city %> <%= link_to t('google-link'), venue.googlemaps_url, class: "google-link" %>
+<%= [venue.name, venue.address, venue.postcode, venue.city].reject{|e| e.blank?}.join(", ") %> <%= link_to t('google-link'), venue.googlemaps_url, class: "google-link" if venue.transport.blank? %>
+<%= content_tag(:span, venue.transport, class: "newline") if venue.transport.present? %>

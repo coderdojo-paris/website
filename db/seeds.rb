@@ -13,6 +13,17 @@ Resource.delete_all
 FaqType.delete_all
 Faq.delete_all
 
+twitter = Venue.create(
+  name: "Twitter France HQ",
+  address: "Opéra",
+  city: "Paris",
+  country: "France",
+  latitude: 48.8683314,
+  longtitude: 2.3370083,
+  transport: "Transport: RER A Auber,  Metro 3 7 8 Opéra",
+  googlemaps_url: "https://www.google.com/maps/place/75009+Paris,+France/@48.8683314,2.3370083,13.92z/data=!4m2!3m1!1s0x47e66e477841dcbd:0x1c0b82c6e1d85180"
+  )
+
 valtech = Venue.create(
   name: "Valtech",
   address: "103 Rue de Grenelle",
@@ -35,6 +46,13 @@ numa = Venue.create(
   longtitude: 2.349631,
   googlemaps_url: "https://www.google.fr/maps/place/NUMA/@48.867589,2.349631,17z/data=!3m1!4b1!4m2!3m1!1s0x47e66e3c310f7817:0x1715b707d5c6af5e",
   company_url: "https://www.numa.paris/"
+)
+
+event_28may = Event.create(
+  start: "2016-05-28 14:00:00.000000",
+  end: "2016-05-28 17:00:00.000000",
+  signup_link: "https://www.eventbrite.fr/e/billets-coderdojo-paris-24966656943",
+  venue: twitter
 )
 
 event_18oct = Event.create(
