@@ -24,7 +24,7 @@ You will need the following things properly installed on your computer.
 * `foreman start -f Procfile.dev`
 * Visit your app at http://0.0.0.0:5000
 
-## Updating the text
+## Updating the texts
 
 ### For individual FAQs, Events and Resources
 
